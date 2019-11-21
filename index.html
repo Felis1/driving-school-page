@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="preloader/scss/preloader.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <title>document</title>
+</head>
+
+<body data-action="close">
+
+
+  <!-- <div class="info">
+    <p>Telegram: <a href="https://t.me/vaduccrd" class="telegram">@vaduccrd</a></p>
+  </div> -->
+  <div class="progressbar"></div>
+  <header>
+    <!-- Modal PRICE -->
+    <div class="modal fade" id="price-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Актуальные цены:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" data-dismiss="modal">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Практическое обучение: 100$<br>
+            Теория: 100$<br>
+            Страховка: 50$<br>
+            Пакет водительских удостовирений: <u>250$</u>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-secondary" data-target="close_modal" id="close-price" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////// -->
+    <!-- MODAL CONTACT -->
+    <form class="contact-wrap fade" id="contact-modal">
+      <!-- ****PRELOADER****** -->
+      <div>
+        <div class="email-form-message">
+          <div class="message-style"></div>
+          <div class="container">
+            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="transparent" />
+              <p class='message'>Сообщение отправлено.</p>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+      <div id="cube-loader">
+        <div class="caption">
+          <div class="cube-loader">
+            <div class="cube loader-1"></div>
+            <div class="cube loader-2"></div>
+            <div class="cube loader-4"></div>
+            <div class="cube loader-3"></div>
+          </div>
+        </div>
+      </div>
+      <!-- ********************* -->
+      <div class="rel">
+        <button class="close-btn close" type="button">
+          <span aria-hidden="true" data-action="close">&times;</span>
+        </button>
+        <div id="error">
+          <u><span class="error-message">Заполните все поля</span></u>
+        </div>
+        <div class="form-group">
+          <label for="name" style="display: block;">Имя</label>
+          <input type="email" class="form-control" id="name" placeholder="Например: Иван" required>
+        </div>
+        <div class="form-group">
+          <label for="phone-number">Номер телефона:</label>
+          <input type="email" class="form-control" id="phone-number" placeholder="Например: 800755785* или 09836194**" required>
+        </div>
+        <div class="form-group">
+          <label for="mail">Почта:</label>
+          <input type="email" class="form-control" id="mail" placeholder="Например: example@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="question">Сообщение:</label>
+          <textarea class="form-control" id="question" for="send-btn" rows="3" required></textarea>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="send-btn">Отправить</button>
+        <button type="button" data-action="close" class="btn btn-lg btn-block close-btn">Закрыть</button>
+      </div>
+    </form>
+    <!-- ///////// -->
+    <div class="helm-wrap">
+      <img src="helm.png" alt="helm">
+      <h1>АВТОШКОЛА</h1>
+    </div>
+    <nav class="nav-wrap">
+      <a href="#" id="home">ГЛАВНАЯ</a>
+      <a href="#" id="about">О ШКОЛЕ</a>
+      <a href="#" id="course">КУРСЫ</a>
+      <a href="#" data-toggle="modal" data-target="#price-modal" id="price-btn">ЦЕНЫ</a>
+      <a href="#" id="contact" data-toggle="modal-contact" data-target="#contact-modal">КОНТАКТЫ</a>
+    </nav>
+    <h2>ТОЛЬКО КВАЛИФИЦИРОВАННЫЕ ИНСТРУКТОРЫ</h2>
+  </header>
+  <section>
+    <div class="car-wrap">
+      <img src="car.jpg" class="slide" alt="man in car">
+    </div>
+    <div class="article-wrap">
+      <div>
+        <h2>Получи водительские права</h2>
+        <p>Данный текст необходимо заменить на информацию о вас и вашей деятельности. Данный текст необходимо заменить на информацию о вас и вашей...</p>
+      </div>
+      <div class="helm-log">
+        <img src="helm_log.png" class="images" alt="helm">
+        <h3>О школе</h3>
+        <p>На этой странице вы найдете самую последнюю информацию о нас. Наша компания...
+
+          Постоянно развивается и растет. Мы предоставляем широкий спектр услуг обеспечивающий прекрасный результат и...Положительное влияние на вашу деятельность. Если вы хотите с нами связаться...Заполните контактную форму на нашем сайте. Желаем
+          вам хорошего дня! На этой странице вы найдете самую последнюю...</p>
+      </div>
+      <div class="cartoon">
+        <img src="cartoon.png" class="images" alt="">
+        <h3>Курсы</h3>
+        <p>
+          На этой странице вы найдете самую последнюю информацию о нас. Наша компания...Постоянно развивается и растет. Мы предоставляем широкий спектр услуг обеспечивающий прекрасный результат и положительное влияние на вашу деятельность. Если вы
+          хотите с нами связаться, заполните контактную форму на нашем сайте. Желаем вам хорошего дня! На этой странице вы найдете самую последнюю информацию о нас. Наша компания постоянно развивается и растет. Мы предоставляем широкий спектр
+          услуг...
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>©2019 the test theme by Felis</p>
+    <i class="fa fa-5x fa-arrow-circle-up arrow"></i>
+  </footer>
+</body>
+
+</html>
